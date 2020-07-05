@@ -47,7 +47,7 @@ CyU3PReturnStatus_t CyFxConfigFpga(uint32_t uiLen)
       CyU3PDebugPrint (6, "file length: %d\n", uiLen);
       /* Pull PROG_B line to reset FPGA */
       apiRetStatus = CyU3PSpiSetSsnLine (CyFalse);
-      CyU3PGpioSimpleGetValue (FPGA_INIT_B, &xFpga_Init_B);
+      CyU3PThreadSleep(5);
 
       CyU3PGpioSimpleGetValue (FPGA_INIT_B, &xFpga_Init_B);
           	  if (xFpga_Init_B)
@@ -208,8 +208,8 @@ void
 CyFxConfigFpgaApplnStop (
         void)
 {
-	CyU3PEpConfig_t epCfg;
-	CyU3PReturnStatus_t apiRetStatus = CY_U3P_SUCCESS;
+//	CyU3PEpConfig_t epCfg;
+//	CyU3PReturnStatus_t apiRetStatus = CY_U3P_SUCCESS;
 
 
 	CyU3PGpioDeInit();
@@ -218,7 +218,7 @@ CyFxConfigFpgaApplnStop (
     /* Update the flag. */
     glIsApplnActive = CyFalse;
 
-    CyU3PUsbGetEpSeqNum(CY_FX_EP_PRODUCER, &seqnum_p);
+    CyU3PUsbGetEpSeqNum(CY_FX_EP_PRODUCER, seqnum_p);
 
     /* Flush the endpoint memory */
     CyU3PUsbFlushEp(CY_FX_EP_PRODUCER);
@@ -358,7 +358,7 @@ CyFxConfigFpgaApplnInit (void)
     /* Set the USB Enumeration descriptors */
 
     /* Super speed device descriptor. */
-    apiRetStatus = CyU3PUsbSetDesc(CY_U3P_USB_SET_SS_DEVICE_DESCR, NULL, (uint8_t *)CyFxUSB30DeviceDscr);
+    apiRetStatus = CyU3PUsbSetDesc(CY_U3P_USB_SET_SS_DEVICE_DESCR, 0, (uint8_t *)CyFxUSB30DeviceDscr);
     if (apiRetStatus != CY_U3P_SUCCESS)
     {
         CyU3PDebugPrint (4, "USB set device descriptor failed, Error code = %d\n", apiRetStatus);
@@ -366,7 +366,7 @@ CyFxConfigFpgaApplnInit (void)
     }
 
     /* High speed device descriptor. */
-    apiRetStatus = CyU3PUsbSetDesc(CY_U3P_USB_SET_HS_DEVICE_DESCR, NULL, (uint8_t *)CyFxUSB20DeviceDscr);
+    apiRetStatus = CyU3PUsbSetDesc(CY_U3P_USB_SET_HS_DEVICE_DESCR, 0, (uint8_t *)CyFxUSB20DeviceDscr);
     if (apiRetStatus != CY_U3P_SUCCESS)
     {
         CyU3PDebugPrint (4, "USB set device descriptor failed, Error code = %d\n", apiRetStatus);
@@ -374,7 +374,7 @@ CyFxConfigFpgaApplnInit (void)
     }
 
     /* BOS descriptor */
-    apiRetStatus = CyU3PUsbSetDesc(CY_U3P_USB_SET_SS_BOS_DESCR, NULL, (uint8_t *)CyFxUSBBOSDscr);
+    apiRetStatus = CyU3PUsbSetDesc(CY_U3P_USB_SET_SS_BOS_DESCR, 0, (uint8_t *)CyFxUSBBOSDscr);
     if (apiRetStatus != CY_U3P_SUCCESS)
     {
         CyU3PDebugPrint (4, "USB set configuration descriptor failed, Error code = %d\n", apiRetStatus);
@@ -382,7 +382,7 @@ CyFxConfigFpgaApplnInit (void)
     }
 
     /* Device qualifier descriptor */
-    apiRetStatus = CyU3PUsbSetDesc(CY_U3P_USB_SET_DEVQUAL_DESCR, NULL, (uint8_t *)CyFxUSBDeviceQualDscr);
+    apiRetStatus = CyU3PUsbSetDesc(CY_U3P_USB_SET_DEVQUAL_DESCR, 0, (uint8_t *)CyFxUSBDeviceQualDscr);
     if (apiRetStatus != CY_U3P_SUCCESS)
     {
         CyU3PDebugPrint (4, "USB set device qualifier descriptor failed, Error code = %d\n", apiRetStatus);
@@ -390,7 +390,7 @@ CyFxConfigFpgaApplnInit (void)
     }
 
     /* Super speed configuration descriptor */
-    apiRetStatus = CyU3PUsbSetDesc(CY_U3P_USB_SET_SS_CONFIG_DESCR, NULL, (uint8_t *)CyFxUSBSSConfigDscr);
+    apiRetStatus = CyU3PUsbSetDesc(CY_U3P_USB_SET_SS_CONFIG_DESCR, 0, (uint8_t *)CyFxUSBSSConfigDscr);
     if (apiRetStatus != CY_U3P_SUCCESS)
     {
         CyU3PDebugPrint (4, "USB set configuration descriptor failed, Error code = %d\n", apiRetStatus);
@@ -398,7 +398,7 @@ CyFxConfigFpgaApplnInit (void)
     }
 
     /* High speed configuration descriptor */
-    apiRetStatus = CyU3PUsbSetDesc(CY_U3P_USB_SET_HS_CONFIG_DESCR, NULL, (uint8_t *)CyFxUSBHSConfigDscr);
+    apiRetStatus = CyU3PUsbSetDesc(CY_U3P_USB_SET_HS_CONFIG_DESCR, 0, (uint8_t *)CyFxUSBHSConfigDscr);
     if (apiRetStatus != CY_U3P_SUCCESS)
     {
         CyU3PDebugPrint (4, "USB Set Other Speed Descriptor failed, Error Code = %d\n", apiRetStatus);
@@ -406,7 +406,7 @@ CyFxConfigFpgaApplnInit (void)
     }
 
     /* Full speed configuration descriptor */
-    apiRetStatus = CyU3PUsbSetDesc(CY_U3P_USB_SET_FS_CONFIG_DESCR, NULL, (uint8_t *)CyFxUSBFSConfigDscr);
+    apiRetStatus = CyU3PUsbSetDesc(CY_U3P_USB_SET_FS_CONFIG_DESCR, 0, (uint8_t *)CyFxUSBFSConfigDscr);
     if (apiRetStatus != CY_U3P_SUCCESS)
     {
         CyU3PDebugPrint (4, "USB Set Configuration Descriptor failed, Error Code = %d\n", apiRetStatus);
@@ -496,8 +496,8 @@ main (void)
     io_cfg.isDQ32Bit = CyFalse;
     io_cfg.lppMode   = CY_U3P_IO_MATRIX_LPP_DEFAULT;
     /* GPIOs 50 and 52 are enabled. */
-    io_cfg.gpioSimpleEn[0]  = 0x00000000;
-    io_cfg.gpioSimpleEn[1]  = 0x00140000;
+    io_cfg.gpioSimpleEn[0]  = (1<<FPGA_INIT_B) | (1<<FPGA_DONE) ;
+    io_cfg.gpioSimpleEn[1]  = 0x00000000;
     io_cfg.gpioComplexEn[0] = 0;
     io_cfg.gpioComplexEn[1] = 0;
     status = CyU3PDeviceConfigureIOMatrix (&io_cfg);

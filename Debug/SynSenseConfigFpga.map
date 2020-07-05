@@ -10363,73 +10363,73 @@ END GROUP
                 0x40003000                jump
                 0x40003004                CyU3PToolChainInit
                 0x40003020                __user_initial_stackheap
- .text          0x4000302c      0xa9c ./cyfxconfigfpga.o
+ .text          0x4000302c      0xa8c ./cyfxconfigfpga.o
                 0x4000302c                CyFxConfigFpga
-                0x40003248                CyFxConfigFpgaApplnStart
-                0x4000344c                CyFxConfigFpgaApplnStop
-                0x400034a4                CyFxConfigFpgaApplnInit
-                0x400039b4                main
- .text          0x40003ac8      0xca4 ./cyfxslfifosync.o
-                0x40003ac8                CyFxAppErrorHandler
-                0x40003ae4                CyFxSlFifoApplnDebugInit
-                0x40003bd8                CyFxSlFifoUtoPDmaCallback
-                0x40003c64                CyFxSlFifoPtoUDmaCallback
-                0x40003cf0                CyFxSlFifoApplnStart
-                0x40003fe4                CyFxSlFifoApplnStop
-                0x400040c8                CyFxSlFifoApplnUSBSetupCB
-                0x40004398                CyFxSlFifoApplnUSBEventCB
-                0x4000441c                CyFxApplnLPMRqtCB
-                0x40004444                CyFxSlFifoApplnInit
-                0x40004568                CyFxSwitchtoslFifo
-                0x400045f4                SlFifoAppThread_Entry
-                0x400046d0                CyFxApplicationDefine
- .text          0x4000476c        0x0 ./cyfxslfifousbdscr.o
- .text          0x4000476c      0xb78 ./cyfxtx.o
-                0x4000476c                CyU3PUndefinedHandler
-                0x40004778                CyU3PPrefetchHandler
-                0x40004784                CyU3PAbortHandler
-                0x40004790                tx_application_define
-                0x400047ac                CyU3PMemInit
-                0x40004804                CyU3PMemAlloc
-                0x40004888                CyU3PMemFree
-                0x400048a8                CyU3PMemSet
-                0x400049a8                CyU3PMemCopy
-                0x40004ae0                CyU3PMemCmp
-                0x40004b80                CyU3PDmaBufferInit
-                0x40004c78                CyU3PDmaBufferDeInit
-                0x40004ec4                CyU3PDmaBufferAlloc
-                0x40005124                CyU3PDmaBufferFree
-                0x400052b8                CyU3PFreeHeaps
- .text          0x400052e4       0x50 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_system_return.o)
-                0x400052e4                _tx_thread_system_return
- .text          0x40005334       0x74 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_schedule.o)
-                0x40005334                _tx_thread_schedule
- .text          0x400053a8       0xf0 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_timer_interrupt.o)
-                0x400053a8                _tx_timer_interrupt
- .text          0x40005498       0x3c D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_initialize_low_level.o)
-                0x40005498                _tx_initialize_low_level
- .text          0x400054d4       0x78 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_stack_build.o)
-                0x400054d4                _tx_thread_stack_build
- .text          0x4000554c       0xf0 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\ARM GCC\\arm-none-eabi\lib\libc.a(lib_a-strcpy.o)
-                0x4000554c                strcpy
- .text          0x4000563c       0x60 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\ARM GCC\\arm-none-eabi\lib\libc.a(lib_a-strlen.o)
-                0x4000563c                strlen
- .text          0x4000569c      0x114 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\ARM GCC\\lib\gcc\arm-none-eabi\4.8.1\libgcc.a(_udivsi3.o)
-                0x4000569c                __aeabi_uidiv
-                0x4000569c                __udivsi3
-                0x40005790                __aeabi_uidivmod
- .text          0x400057b0      0x148 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\ARM GCC\\lib\gcc\arm-none-eabi\4.8.1\libgcc.a(_divsi3.o)
-                0x400057b0                __divsi3
-                0x400057b0                __aeabi_idiv
-                0x400058d8                __aeabi_idivmod
- .text          0x400058f8        0x4 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\ARM GCC\\lib\gcc\arm-none-eabi\4.8.1\libgcc.a(_dvmd_tls.o)
-                0x400058f8                __aeabi_idiv0
-                0x400058f8                __aeabi_ldiv0
+                0x40003240                CyFxConfigFpgaApplnStart
+                0x40003444                CyFxConfigFpgaApplnStop
+                0x40003494                CyFxConfigFpgaApplnInit
+                0x400039a4                main
+ .text          0x40003ab8      0xca4 ./cyfxslfifosync.o
+                0x40003ab8                CyFxAppErrorHandler
+                0x40003ad4                CyFxSlFifoApplnDebugInit
+                0x40003bc8                CyFxSlFifoUtoPDmaCallback
+                0x40003c54                CyFxSlFifoPtoUDmaCallback
+                0x40003ce0                CyFxSlFifoApplnStart
+                0x40003fd4                CyFxSlFifoApplnStop
+                0x400040b8                CyFxSlFifoApplnUSBSetupCB
+                0x40004388                CyFxSlFifoApplnUSBEventCB
+                0x4000440c                CyFxApplnLPMRqtCB
+                0x40004434                CyFxSlFifoApplnInit
+                0x40004558                CyFxSwitchtoslFifo
+                0x400045e4                SlFifoAppThread_Entry
+                0x400046c0                CyFxApplicationDefine
+ .text          0x4000475c        0x0 ./cyfxslfifousbdscr.o
+ .text          0x4000475c      0xb78 ./cyfxtx.o
+                0x4000475c                CyU3PUndefinedHandler
+                0x40004768                CyU3PPrefetchHandler
+                0x40004774                CyU3PAbortHandler
+                0x40004780                tx_application_define
+                0x4000479c                CyU3PMemInit
+                0x400047f4                CyU3PMemAlloc
+                0x40004878                CyU3PMemFree
+                0x40004898                CyU3PMemSet
+                0x40004998                CyU3PMemCopy
+                0x40004ad0                CyU3PMemCmp
+                0x40004b70                CyU3PDmaBufferInit
+                0x40004c68                CyU3PDmaBufferDeInit
+                0x40004eb4                CyU3PDmaBufferAlloc
+                0x40005114                CyU3PDmaBufferFree
+                0x400052a8                CyU3PFreeHeaps
+ .text          0x400052d4       0x50 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_system_return.o)
+                0x400052d4                _tx_thread_system_return
+ .text          0x40005324       0x74 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_schedule.o)
+                0x40005324                _tx_thread_schedule
+ .text          0x40005398       0xf0 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_timer_interrupt.o)
+                0x40005398                _tx_timer_interrupt
+ .text          0x40005488       0x3c D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_initialize_low_level.o)
+                0x40005488                _tx_initialize_low_level
+ .text          0x400054c4       0x78 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_stack_build.o)
+                0x400054c4                _tx_thread_stack_build
+ .text          0x4000553c       0xf0 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\ARM GCC\\arm-none-eabi\lib\libc.a(lib_a-strcpy.o)
+                0x4000553c                strcpy
+ .text          0x4000562c       0x60 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\ARM GCC\\arm-none-eabi\lib\libc.a(lib_a-strlen.o)
+                0x4000562c                strlen
+ .text          0x4000568c      0x114 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\ARM GCC\\lib\gcc\arm-none-eabi\4.8.1\libgcc.a(_udivsi3.o)
+                0x4000568c                __aeabi_uidiv
+                0x4000568c                __udivsi3
+                0x40005780                __aeabi_uidivmod
+ .text          0x400057a0      0x148 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\ARM GCC\\lib\gcc\arm-none-eabi\4.8.1\libgcc.a(_divsi3.o)
+                0x400057a0                __divsi3
+                0x400057a0                __aeabi_idiv
+                0x400058c8                __aeabi_idivmod
+ .text          0x400058e8        0x4 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\ARM GCC\\lib\gcc\arm-none-eabi\4.8.1\libgcc.a(_dvmd_tls.o)
+                0x400058e8                __aeabi_idiv0
+                0x400058e8                __aeabi_ldiv0
  *(.rodata*)
- .rodata        0x400058fc      0x334 ./cyfxconfigfpga.o
- .rodata        0x40005c30      0x1cc ./cyfxslfifosync.o
-                0x40005c30                CyFxGpifConfig
- *fill*         0x40005dfc        0x4 
+ .rodata        0x400058ec      0x334 ./cyfxconfigfpga.o
+ .rodata        0x40005c20      0x1cc ./cyfxslfifosync.o
+                0x40005c20                CyFxGpifConfig
+ *fill*         0x40005dec       0x14 
  .rodata        0x40005e00      0x160 ./cyfxslfifousbdscr.o
                 0x40005e00                CyFxUSB30DeviceDscr
                 0x40005e20                CyFxUSB20DeviceDscr
@@ -14617,54 +14617,54 @@ OUTPUT(SynSenseConfigFpga.elf elf32-littlearm)
  .arm_vfe_header
                 0x000001ac        0x4 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_queue_cleanup.o)
 
-.debug_line     0x00000000     0x10d2
+.debug_line     0x00000000     0x10d1
  .debug_line    0x00000000       0x53 ./cyfx_gcc_startup.o
- .debug_line    0x00000053      0x2c0 ./cyfxconfigfpga.o
- .debug_line    0x00000313      0x301 ./cyfxslfifosync.o
- .debug_line    0x00000614       0xf2 ./cyfxslfifousbdscr.o
- .debug_line    0x00000706      0x29c ./cyfxtx.o
- .debug_line    0x000009a2       0x80 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyfxapi.a(cyu3entry_armcc.o)
- .debug_line    0x00000a22       0x50 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyfxapi.a(cyu3entry_armcc.o)
- .debug_line    0x00000a72       0xf8 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyfxapi.a(cyu3mmu.o)
- .debug_line    0x00000b6a      0x194 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyfxapi.a(cyu3isr_armcc.o)
- .debug_line    0x00000cfe       0x68 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_system_return.o)
- .debug_line    0x00000d66       0x68 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_schedule.o)
- .debug_line    0x00000dce       0x6c D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_vectored_context_save.o)
- .debug_line    0x00000e3a       0x8c D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_timer_interrupt.o)
- .debug_line    0x00000ec6       0xa0 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_context_restore.o)
- .debug_line    0x00000f66       0x54 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_irq_nesting_end.o)
- .debug_line    0x00000fba       0x58 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_irq_nesting_start.o)
- .debug_line    0x00001012       0x58 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_initialize_low_level.o)
- .debug_line    0x0000106a       0x68 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_stack_build.o)
+ .debug_line    0x00000053      0x2bf ./cyfxconfigfpga.o
+ .debug_line    0x00000312      0x301 ./cyfxslfifosync.o
+ .debug_line    0x00000613       0xf2 ./cyfxslfifousbdscr.o
+ .debug_line    0x00000705      0x29c ./cyfxtx.o
+ .debug_line    0x000009a1       0x80 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyfxapi.a(cyu3entry_armcc.o)
+ .debug_line    0x00000a21       0x50 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyfxapi.a(cyu3entry_armcc.o)
+ .debug_line    0x00000a71       0xf8 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyfxapi.a(cyu3mmu.o)
+ .debug_line    0x00000b69      0x194 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyfxapi.a(cyu3isr_armcc.o)
+ .debug_line    0x00000cfd       0x68 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_system_return.o)
+ .debug_line    0x00000d65       0x68 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_schedule.o)
+ .debug_line    0x00000dcd       0x6c D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_vectored_context_save.o)
+ .debug_line    0x00000e39       0x8c D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_timer_interrupt.o)
+ .debug_line    0x00000ec5       0xa0 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_context_restore.o)
+ .debug_line    0x00000f65       0x54 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_irq_nesting_end.o)
+ .debug_line    0x00000fb9       0x58 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_irq_nesting_start.o)
+ .debug_line    0x00001011       0x58 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_initialize_low_level.o)
+ .debug_line    0x00001069       0x68 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_stack_build.o)
 
-.debug_info     0x00000000     0x48ca
+.debug_info     0x00000000     0x48a9
  .debug_info    0x00000000       0x76 ./cyfx_gcc_startup.o
- .debug_info    0x00000076     0x1669 ./cyfxconfigfpga.o
- .debug_info    0x000016df     0x1a50 ./cyfxslfifosync.o
- .debug_info    0x0000312f      0x2a1 ./cyfxslfifousbdscr.o
- .debug_info    0x000033d0      0xcee ./cyfxtx.o
- .debug_info    0x000040be       0x94 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyfxapi.a(cyu3entry_armcc.o)
- .debug_info    0x00004152       0x94 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyfxapi.a(cyu3entry_armcc.o)
- .debug_info    0x000041e6       0x8c D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyfxapi.a(cyu3mmu.o)
- .debug_info    0x00004272       0x94 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyfxapi.a(cyu3isr_armcc.o)
- .debug_info    0x00004306       0xa4 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_system_return.o)
- .debug_info    0x000043aa       0xa0 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_schedule.o)
- .debug_info    0x0000444a       0xac D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_vectored_context_save.o)
- .debug_info    0x000044f6       0xa0 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_timer_interrupt.o)
- .debug_info    0x00004596       0xa4 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_context_restore.o)
- .debug_info    0x0000463a       0xa4 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_irq_nesting_end.o)
- .debug_info    0x000046de       0xa8 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_irq_nesting_start.o)
- .debug_info    0x00004786       0xa4 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_initialize_low_level.o)
- .debug_info    0x0000482a       0xa0 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_stack_build.o)
+ .debug_info    0x00000076     0x1648 ./cyfxconfigfpga.o
+ .debug_info    0x000016be     0x1a50 ./cyfxslfifosync.o
+ .debug_info    0x0000310e      0x2a1 ./cyfxslfifousbdscr.o
+ .debug_info    0x000033af      0xcee ./cyfxtx.o
+ .debug_info    0x0000409d       0x94 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyfxapi.a(cyu3entry_armcc.o)
+ .debug_info    0x00004131       0x94 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyfxapi.a(cyu3entry_armcc.o)
+ .debug_info    0x000041c5       0x8c D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyfxapi.a(cyu3mmu.o)
+ .debug_info    0x00004251       0x94 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyfxapi.a(cyu3isr_armcc.o)
+ .debug_info    0x000042e5       0xa4 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_system_return.o)
+ .debug_info    0x00004389       0xa0 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_schedule.o)
+ .debug_info    0x00004429       0xac D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_vectored_context_save.o)
+ .debug_info    0x000044d5       0xa0 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_timer_interrupt.o)
+ .debug_info    0x00004575       0xa4 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_context_restore.o)
+ .debug_info    0x00004619       0xa4 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_irq_nesting_end.o)
+ .debug_info    0x000046bd       0xa8 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_irq_nesting_start.o)
+ .debug_info    0x00004765       0xa4 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_initialize_low_level.o)
+ .debug_info    0x00004809       0xa0 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyu3threadx.a(tx_thread_stack_build.o)
 
-.debug_abbrev   0x00000000      0x69c
+.debug_abbrev   0x00000000      0x6b4
  .debug_abbrev  0x00000000       0x14 ./cyfx_gcc_startup.o
- .debug_abbrev  0x00000014      0x1c5 ./cyfxconfigfpga.o
- .debug_abbrev  0x000001d9      0x1eb ./cyfxslfifosync.o
- .debug_abbrev  0x000003c4       0x86 ./cyfxslfifousbdscr.o
- .debug_abbrev  0x0000044a      0x23e ./cyfxtx.o
- .debug_abbrev  0x00000688       0x14 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyfxapi.a(cyu3entry_armcc.o)
-                0x00000688                __ARM_asm.debug_abbrev
+ .debug_abbrev  0x00000014      0x1dd ./cyfxconfigfpga.o
+ .debug_abbrev  0x000001f1      0x1eb ./cyfxslfifosync.o
+ .debug_abbrev  0x000003dc       0x86 ./cyfxslfifousbdscr.o
+ .debug_abbrev  0x00000462      0x23e ./cyfxtx.o
+ .debug_abbrev  0x000006a0       0x14 D:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\\firmware\u3p_firmware\lib\fx3_debug\cyfxapi.a(cyu3entry_armcc.o)
+                0x000006a0                __ARM_asm.debug_abbrev
 
 .debug_aranges  0x00000000       0x98
  .debug_aranges

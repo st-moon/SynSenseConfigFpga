@@ -258,7 +258,7 @@ CyFxSlFifoApplnStart (
         CyFxAppErrorHandler (apiRetStatus);
     }
 
-    CyU3PUsbSetEpSeqNum (CY_FX_EP_PRODUCER, seqnum_p);
+    CyU3PUsbSetEpSeqNum (CY_FX_EP_PRODUCER, *seqnum_p);
 
     /* Consumer endpoint configuration */
     apiRetStatus = CyU3PSetEpConfig(CY_FX_EP_CONSUMER, &epCfg);

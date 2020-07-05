@@ -1054,11 +1054,11 @@
  801              	.L26:
  259:../cyfxslfifosync.c ****     }
  260:../cyfxslfifosync.c **** 
- 261:../cyfxslfifosync.c ****     CyU3PUsbSetEpSeqNum (CY_FX_EP_PRODUCER, seqnum_p);
+ 261:../cyfxslfifosync.c ****     CyU3PUsbSetEpSeqNum (CY_FX_EP_PRODUCER, *seqnum_p);
  802              		.loc 1 261 0
  803 031c D4319FE5 		ldr	r3, .L33+8
  804 0320 003093E5 		ldr	r3, [r3]
- 805 0324 FF3003E2 		and	r3, r3, #255
+ 805 0324 0030D3E5 		ldrb	r3, [r3]	@ zero_extendqisi2
  806 0328 0100A0E3 		mov	r0, #1
  807 032c 0310A0E1 		mov	r1, r3
  808 0330 FEFFFFEB 		bl	CyU3PUsbSetEpSeqNum
@@ -2686,55 +2686,55 @@
  1837              		.file 16 "../cyfxgpif2config.h"
 DEFINED SYMBOLS
                             *ABS*:00000000 cyfxslfifosync.c
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:21     .data:00000000 CyFxGpifTransition
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:18     .data:00000000 $d
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:33     .data:00000010 CyFxGpifWavedata
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:86     .data:000000d0 CyFxGpifWavedataPosition
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:290    .data:00000198 CyFxGpifRegValue
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:372    .rodata:00000000 CyFxGpifConfig
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:369    .rodata:00000000 $d
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:21     .data:00000000 CyFxGpifTransition
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:18     .data:00000000 $d
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:33     .data:00000010 CyFxGpifWavedata
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:86     .data:000000d0 CyFxGpifWavedataPosition
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:290    .data:00000198 CyFxGpifRegValue
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:372    .rodata:00000000 CyFxGpifConfig
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:369    .rodata:00000000 $d
                             *COM*:000000a8 slFifoAppThread
                             *COM*:000000ac glChHandleSlFifoUtoP
                             *COM*:000000ac glChHandleSlFifoPtoU
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:391    .bss:00000000 glDMARxCount
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:388    .bss:00000000 $d
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:397    .bss:00000004 glDMATxCount
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:403    .bss:00000008 glIsApplnActive
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:391    .bss:00000000 glDMARxCount
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:388    .bss:00000000 $d
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:397    .bss:00000004 glDMATxCount
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:403    .bss:00000008 glIsApplnActive
                             *COM*:00000020 glEp0Buffer
                             *COM*:00000004 seqnum_p
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:408    .text:00000000 $a
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:411    .text:00000000 CyFxAppErrorHandler
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:440    .text:0000001c CyFxSlFifoApplnDebugInit
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:542    .text:0000010c $d
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:552    .text:00000110 $a
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:555    .text:00000110 CyFxSlFifoUtoPDmaCallback
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:613    .text:00000194 $d
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:618    .text:0000019c $a
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:621    .text:0000019c CyFxSlFifoPtoUDmaCallback
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:679    .text:00000220 $d
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:698    .text:00000228 $a
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:701    .text:00000228 CyFxSlFifoApplnStart
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:969    .text:000004f0 $d
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:983    .text:0000051c $a
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:986    .text:0000051c CyFxSlFifoApplnStop
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:1074   .text:000005f0 $d
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:1081   .text:00000600 $a
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:1084   .text:00000600 CyFxSlFifoApplnUSBSetupCB
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:1333   .text:000008b4 $d
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:1343   .text:000008d0 $a
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:1346   .text:000008d0 CyFxSlFifoApplnUSBEventCB
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:1411   .text:00000950 $d
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:1415   .text:00000954 $a
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:1418   .text:00000954 CyFxApplnLPMRqtCB
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:1460   .text:0000097c CyFxSlFifoApplnInit
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:1567   .text:00000a8c $d
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:1575   .text:00000aa0 $a
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:1578   .text:00000aa0 CyFxSwitchtoslFifo
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:1655   .text:00000b2c SlFifoAppThread_Entry
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:1738   .text:00000bf0 $d
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:1752   .text:00000c08 $a
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:1755   .text:00000c08 CyFxApplicationDefine
-C:\Users\FANJIA~1\AppData\Local\Temp\ccYuF2re.s:1816   .text:00000c98 $d
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:408    .text:00000000 $a
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:411    .text:00000000 CyFxAppErrorHandler
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:440    .text:0000001c CyFxSlFifoApplnDebugInit
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:542    .text:0000010c $d
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:552    .text:00000110 $a
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:555    .text:00000110 CyFxSlFifoUtoPDmaCallback
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:613    .text:00000194 $d
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:618    .text:0000019c $a
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:621    .text:0000019c CyFxSlFifoPtoUDmaCallback
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:679    .text:00000220 $d
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:698    .text:00000228 $a
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:701    .text:00000228 CyFxSlFifoApplnStart
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:969    .text:000004f0 $d
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:983    .text:0000051c $a
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:986    .text:0000051c CyFxSlFifoApplnStop
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:1074   .text:000005f0 $d
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:1081   .text:00000600 $a
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:1084   .text:00000600 CyFxSlFifoApplnUSBSetupCB
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:1333   .text:000008b4 $d
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:1343   .text:000008d0 $a
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:1346   .text:000008d0 CyFxSlFifoApplnUSBEventCB
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:1411   .text:00000950 $d
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:1415   .text:00000954 $a
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:1418   .text:00000954 CyFxApplnLPMRqtCB
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:1460   .text:0000097c CyFxSlFifoApplnInit
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:1567   .text:00000a8c $d
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:1575   .text:00000aa0 $a
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:1578   .text:00000aa0 CyFxSwitchtoslFifo
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:1655   .text:00000b2c SlFifoAppThread_Entry
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:1738   .text:00000bf0 $d
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:1752   .text:00000c08 $a
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:1755   .text:00000c08 CyFxApplicationDefine
+C:\Users\FANJIA~1\AppData\Local\Temp\cceHuc1z.s:1816   .text:00000c98 $d
                      .debug_frame:00000010 $d
 
 UNDEFINED SYMBOLS

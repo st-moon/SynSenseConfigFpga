@@ -13,8 +13,11 @@
 
 //Slave Serial Application FW specific defines
 #define CY_FX_SLFIFO_DMA_BUF_COUNT      (16)                       /* Slave FIFO channel U to CPU buffer count */
-#define FPGA_INIT_B 52
-#define FPGA_DONE 50
+//#define FPGA_INIT_B 52
+//#define FPGA_DONE 50
+
+#define FPGA_INIT_B 26
+#define FPGA_DONE 27
 
 //Vendor command code used in FPGA slave serial application
 #define VND_CMD_SLAVESER_CFGLOAD 0xB2
